@@ -1,0 +1,221 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 171, 1) 48%, rgba(9, 9, 171, 1) 100%);
+    color: white;
+    /*height: 100vh;*/
+}
+
+.icon {
+    margin: 30px 20px 300px 50px;
+    width: 15%;
+    height: auto;
+}
+
+.title {
+    margin: 0 0 200px 7%;
+    font-size: 100px;
+}
+
+.main-info {
+    /* display: flex; */
+    /* gap: 50px; */
+    /* height: 20%; */
+    display: grid;
+    grid-auto-flow: column;
+    /*grid-template-columns: repeat(5, 300px);*/
+    grid-template-columns: 300px 300px 200px 200px;
+    justify-items: center;
+    gap: 60px;
+}
+
+.photo {
+    margin: 0 0 0 5%;
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 40px;
+}
+
+.photo__img {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 40px;
+}
+
+.about {
+    font-size: 30px;
+}
+
+.about__text {
+    margin: 20px 0;
+}
+
+.KPI-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.KK-info {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.progressbar1 {
+    max-width: 150px;
+    font-size: 10px;
+    --color1: #0db8ff;
+
+    --percent1: 0; /* процент, насколько заполнен круг */
+    --PI: 3.141592; /* число Пи */
+    --r: 40; /* Радиус круга */
+    --strokeWidth1: 18; /* Толщина линии */
+    --lengthCircle: calc(2 * var(--PI) * var(--r)); /* Длина круга */
+    --opacityThumb1: 0;
+}
+
+.progressbar2 {
+    max-width: 150px;
+    font-size: 10px;
+    --color2: #0db8ff;
+
+    --percent2: 0; /* процент, насколько заполнен круг */
+    --PI: 3.141592; /* число Пи */
+    --r: 40; /* Радиус круга */
+    --strokeWidth2: 18; /* Толщина линии */
+    --lengthCircle: calc(2 * var(--PI) * var(--r)); /* Длина круга */
+    --opacityThumb2: 0;
+}
+
+.progressbar1 circle {
+    r: var(--r);
+}
+
+.progressbar2 circle {
+    r: var(--r);
+}
+
+.progressbar1 text {
+    fill: white;
+    font-size: 10px;
+}
+
+.progressbar2 text {
+    fill: white;
+    font-size: 10px;
+}
+
+.progressbar__percent1 {
+    position: absolute;
+    top: 160px;
+    left: -0.4em;
+    font-size: 16px;
+}
+
+.progressbar__percent2 {
+    position: absolute;
+    top: 160px;
+    left: -0.4em;
+    font-size: 16px;
+}
+
+/*Серый круг*/
+.progressbar__track1 {
+    fill: transparent;
+    stroke: #ededed;
+    stroke-width: var(--strokeWidth1);
+}
+
+.progressbar__track2 {
+    fill: transparent;
+    stroke: #ededed;
+    stroke-width: var(--strokeWidth2);
+}
+
+/*Зеленый круг*/
+.progressbar__thumb1 {
+    fill: transparent;
+    --strokeDasharray: calc(var(--lengthCircle) * var(--percent1) / 100) var(--lengthCircle);
+    stroke-linecap: round;
+    stroke-dasharray: var(--strokeDasharray);
+    stroke: var(--color1);
+    stroke-width: var(--strokeWidth1);
+
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: rotate(-90deg);
+
+    opacity: var(--opacityThumb1);
+}
+
+.progressbar__thumb2 {
+    fill: transparent;
+    --strokeDasharray: calc(var(--lengthCircle) * var(--percent2) / 100) var(--lengthCircle);
+    stroke-linecap: round;
+    stroke-dasharray: var(--strokeDasharray);
+    stroke: var(--color2);
+    stroke-width: var(--strokeWidth2);
+
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: rotate(-90deg);
+
+    opacity: var(--opacityThumb2);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+
+.games_tables {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto 40px;
+}
+
+.table_title {
+    background-color: #004aad;
+    border: 1px white solid;
+    padding: 10px;
+}
+
+.bendi {
+    width: 30%;
+}
+
+.cats {
+    width: 30%;
+}
+
+.colonization {
+    width: 30%;
+}
+
+.main_table {
+    margin: 100px auto 100px;
+    /*border-collapse: collapse;*/
+    width: 95%;
+    height: 300px;
+}
+

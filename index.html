@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru" manifest="manifest.webmanifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алабуга Рейтинг</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" href="./favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="./favicon/icon.svg" type="image/svg+xml">
+    <link rel="yandex-tableau-widget" href="/tableau.json">
+    <link rel="manifest" href="/manifest.webmanifest">
+</head>
+
+<body>
+
+<img class="icon" src="лого.svg" alt="">
+
+<p class="title">Рейтинг сотрудников<br>2023-2024</p>
+
+<table class="main_table">
+    <tr>
+        <th rowspan="5"> Место</th>
+        <th rowspan="5"> ФИО</th>
+        <th rowspan="5"> Подразделение</th>
+        <th rowspan="5"> Должность</th>
+        <th rowspan="5"> Статус</th>
+    </tr>
+    <tr>
+        <th colspan="2">КЛТ (max 60%)</th>
+        <th colspan="6">Цива (36%)</th>
+        <th rowspan="2">BCL</th>
+        <th rowspan="4"> Общий балл КЛТ</th>
+        <th rowspan="2"> KPI </th>
+        <th rowspan="2"> KK </th>
+        <th rowspan="4"> Итого </th>
+
+    </tr>
+    <tr>
+        <th colspan="2">Бенди</th>
+        <th>Single</th>
+        <th>Duel</th>
+        <th>4x4</th>
+        <th>ЛЧ I этап</th>
+        <th>ЛЧ II этап</th>
+        <th>ЛЧ III этап</th>
+    </tr>
+    <tr>
+        <th>Групповой этап</th>
+        <th>Лиги</th>
+        <th rowspan="2">8 страта</th>
+        <th rowspan="2">8 страта</th>
+        <th rowspan="2">8 страта</th>
+        <th rowspan="2">8 страта</th>
+        <th rowspan="2">6 страта</th>
+        <th rowspan="2">6 страта</th>
+        <th rowspan="2">8 страта</th>
+        <th rowspan="2"> 10 страта </th>
+        <th rowspan="2"> 10 страта </th>
+    </tr>
+    <tr>
+        <th>Гвардеец</th>
+        <th>Гвардеец</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<div class="main-info">
+    <div class="photo">
+        <img class="photo__img" src="/corp_culture/img/вера.jpg" alt="">
+    </div>
+    <div class="about">
+        <p class="about__text">Иванов Иван Иванович</p>
+        <p>Алабуга Девелопмент</p>
+        <p>Ведущий специалис</p>
+        <p>Студент 3 курса</p>
+    </div>
+
+
+    <div class="KPI-info">
+        <p>KPI</p>
+        <svg class="progressbar1" viewBox="0 0 100 100">
+            <circle class="progressbar__track1" cx="50" cy="50"></circle>
+            <circle class="progressbar__thumb1" cx="50" cy="50"></circle>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle">
+                <tspan x="50" dy="-5" textAnchor="middle" dy="1em">янв. 2023 -</tspan>
+                <tspan x="50" dy="12" textAnchor="middle" dy="1em">фев. 2024</tspan>
+            </text>
+            <p class="progressbar__percent1"><tspan>0</tspan>%</p>
+        </svg>
+    </div>
+
+    <div class="KK-info">
+        <p>Корпоративная <br> культура</p>
+        <svg class="progressbar2" viewBox="0 0 100 100">
+            <circle class="progressbar__track2" cx="50" cy="50"></circle>
+            <circle class="progressbar__thumb2" cx="50" cy="50"></circle>
+            <text x="50" y="50" text-anchor="middle" dominant-baseline="middle">
+                <tspan x="50" dy="0" textAnchor="middle" dy="1em">Light</tspan>
+            </text>
+            <p class="progressbar__percent2"><tspan>0</tspan>%</p>
+        </svg>
+    </div>
+</div>
+
+<div class="games_tables">
+    <table class="bendi">
+        <caption class="table_title">Бенди</caption>
+        <tr>
+            <td>Групповой этап</td>
+            <td>Топузидис Н.А. - 3</td>
+            <td>Играл</td>
+        </tr>
+        <tr>
+            <td>Лига чемпионов</td>
+            <td>Топузидис Н.А. - 1</td>
+            <td>Выбыл на 1/2</td>
+        </tr>
+    </table>
+
+    <table class="cats">
+        <caption class="table_title">Business Cats Lawyers</caption>
+        <tr>
+            <td>Обучение</td>
+            <td>Пройдено 6 игр</td>
+        </tr>
+        <tr>
+            <td>Первая игра</td>
+            <td>Питомник 1 место</td>
+        </tr>
+        <tr>
+            <td>Вторая игра</td>
+            <td>Питомник 9 место</td>
+        </tr>
+        <tr>
+            <td>Третья игра</td>
+            <td>Зоомагазин 3 место</td>
+        </tr>
+    </table>
+
+    <table class="colonization">
+        <caption class="table_title">Colonization RR IV</caption>
+        <tr>
+            <td>Single</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Duel</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4x4</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ЛЧ - 1 этап</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ЛЧ - 2 этап</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ЛЧ - 3 этап</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ЛЧ - 4 этап</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
